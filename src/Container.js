@@ -63,7 +63,7 @@ export default class Container extends PureComponent {
 
   componentDidMount() {
     this.events.forEach(event =>
-      window.addEventListener(event, this.notifySubscribers)
+      window.addEventListener(event, this.notifySubscribers, true)
     );
   }
 
